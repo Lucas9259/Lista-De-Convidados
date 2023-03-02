@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista de Convidados</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+	<h1 class="tema">Lista de Convidados</h1>
+    <br>
+    <br>
+    <br>
+
+	<form class="Container">
+		<label for="fullname">Nome completo:</label>
+		<input type="text" id="fullname" name="fullname">
+		<br>
+		<label for="relationship">Nível de Parentesco:</label>
+		<input type="text" id="relationship" name="relationship">
+		<br>
+        <label for="age">Idade:</label>
+        <input type="radio" id="age0-3" name="age" value="0 - 3">
+        <label for="age0-18">0 - 3</label>
+        <input type="radio" id="age 3 - 18" name="age" value=" 3 - 18">
+        <label for="age18-30">3 - 18</label>
+        <input type="radio" id="age 18 - 50" name="age" value=" 18 - 50">
+        <label for="age30-50"> 18 - 50</label>
+        <input type="radio" id="age50+" name="age" value="50+">
+        <label for="age50+">50+</label>
+        <br>
+		<button id="addGuestBtn">Adicionar Convidado</button>
+		<button id="clearBtn">Limpar Lista</button>
+		<br><br>
+		<ul id="guestList"></ul>
+	</form>
